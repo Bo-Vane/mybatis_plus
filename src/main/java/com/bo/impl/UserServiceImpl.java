@@ -42,4 +42,9 @@ public class UserServiceImpl implements UserService {
     public int delUserById(int id) {
         return userMapper.deleteById(id);
     }
+
+    @Override
+    public int recover(String name) {
+        return userMapper.recover(name);
+    }
 }

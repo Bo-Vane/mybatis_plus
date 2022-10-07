@@ -46,4 +46,9 @@ public class BootController {
     public String delById(int id){
         return "删除了"+userService.delUserById(id)+"行数据";
     }
+
+    @RequestMapping("/recover")
+    public String recover(String name){
+        return "恢复了"+userService.recover(name)+"条数据";
+    }
 }
